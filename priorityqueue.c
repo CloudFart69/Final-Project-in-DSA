@@ -43,11 +43,3 @@ void enqueue(queuenode **curr, int value)
 }
 
 void dequeue(queuenode **curr){ front = (*curr)->next; }
-
-int main(void)
-{
-    //for (queuenode *curr = front; curr != NULL; curr = curr->next)
-    //{
-    //    printf("Value: %d\n", curr->value);
-    //}
-}
