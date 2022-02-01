@@ -1,5 +1,13 @@
 # depslib dependency file v1.0
-1643613854 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
+1643719187 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
+	<stdio.h>
+	<stdlib.h>
+
+1643632941 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
+	<stdio.h>
+	<stdlib.h>
+
+1643719300 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 
