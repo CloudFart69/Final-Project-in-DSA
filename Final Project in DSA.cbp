@@ -34,6 +34,12 @@
 		<Unit filename="binarytree.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="errorcheck.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="frequencycount.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
