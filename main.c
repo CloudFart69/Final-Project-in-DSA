@@ -9,13 +9,13 @@ typedef struct queuenode
 
 void enqueue(queuenode **curr, int value);
 
-//int x;
-//int y;
+int x;
+int y;
 
 int main()
 {
-    //x = 100;
-    //y = 200;
+    x = 100;
+    y = 200;
     //assign();
     queuenode *front = NULL;
 

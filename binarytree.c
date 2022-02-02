@@ -11,11 +11,11 @@ typedef struct binarytree
     struct binarytree *left, *right;
 }binarytree;
 
-void assign(void)
+/*void assign(void)
 {
     x = 1;
     y = 2;
-}
+}*/
 
 binarytree *createTreeNode(int f, char ch)
 {
