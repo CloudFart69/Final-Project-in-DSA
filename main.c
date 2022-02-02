@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 typedef struct queuenode
 {
     int value; // int muna ngayon pero later magiging treenode na yan
@@ -14,9 +15,6 @@ int y;
 
 int main()
 {
-    x = 100;
-    y = 200;
-    //assign();
     queuenode *front = NULL;
 
     enqueue(&front, 0);
