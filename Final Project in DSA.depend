@@ -3,11 +3,31 @@
 	<stdio.h>
 	<stdlib.h>
 
-1643632941 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
+1643888049 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
 	<stdio.h>
 	<stdlib.h>
 
-1643786413 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1643888164 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+	<stdio.h>
+	<stdlib.h>
+	"binarytree.h"
+	"priorityqueue.h"
+	"countfreq.h"
+	"errorcheck.h"
+
+1643885544 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.c
+	<stdio.h>
+	<stdbool.h>
+
+1643888266 c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.h
+
+1643888544 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
+
+1643888435 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
+
+1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
+
+1643888523 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 

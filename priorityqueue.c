@@ -9,6 +9,7 @@ typedef struct queuenode
     int value; // int muna ngayon pero later magiging treenode na yan
     struct queuenode *next;
 }queuenode;
+
 queuenode *front = NULL;
 // no need for rear dahil reversed yung pagkaka sort. basta and ending mukha siyang stack pag nag dedequeue
 
@@ -43,3 +44,9 @@ void enqueue(queuenode **curr, int value)
 }
 
 void dequeue(queuenode **curr){ front = (*curr)->next; }
+
+//for (queuenode *curr = front; curr != NULL; curr = curr->next)
+//{
+//    printf("Value: %d\n", curr->value);
+//}
+
