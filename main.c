@@ -1,15 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+
 #include "binarytree.h"
 #include "priorityqueue.h"
 #include "countfreq.h"
-#include "errorcheck.h"
+#include "utils.h"
 
 int main()
 {
-    queuenode *front = NULL;
+    // Variables //
+    FILE *fp = NULL; // File to read, print, and work huffman code on
+
+
+
+    /*queuenode *front = NULL;
 
     enqueue(&front, 0);
     enqueue(&front, 5);
-    enqueue(&front, 2);
+    enqueue(&front, 2);*/
+
+
+    initialize();
+    inputFile(fp);
+    enterToContinue();
+    printFreq();
 }

@@ -3,17 +3,18 @@
 	<stdio.h>
 	<stdlib.h>
 
-1643888049 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
+1643888552 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
 	<stdio.h>
 	<stdlib.h>
 
-1643888164 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1643954775 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
+	<stdbool.h>
 	"binarytree.h"
 	"priorityqueue.h"
 	"countfreq.h"
-	"errorcheck.h"
+	"utils.h"
 
 1643885544 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.c
 	<stdio.h>
@@ -23,11 +24,21 @@
 
 1643888544 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
 
-1643888435 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
+1643953956 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1643888523 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1643954975 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"utils.h"
+
+1643954872 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
+	<stdio.h>
+	<stdbool.h>
+
+1643954873 c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.h
+	<stdbool.h>
 	<stdlib.h>
 

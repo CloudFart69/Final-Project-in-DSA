@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+
+#include "utils.h"
 
 int chars[256];
+int size = 0;
+char ch;
 
 // Initializing all characters to be null character
 // Reason: remove unnecessary values
@@ -12,42 +17,34 @@ void initialize()
 }
 
 // Inputs the file to the file pointer
-void inputFile()
+void inputFile(FILE *fp)
 {
     char *filename = malloc(sizeof(char) * 20);
     printf("Input file to compress: ");
     scanf("%s", filename);
 
-    //if (fp==NULL)
-    //{
-    //    printf("File error.\n");
-    //    system("pause");
-    //}
+    fp = fopen(filename,"r");
 
-
-    //fp = fopen(filename,"r");
+    if (isFileNull(fp)){ return; }
+    while (!feof(fp))
+    {
+        ch = fgetc(fp);
+        chars[(int) ch]++;
+        putchar(ch);
+        size++;
+    }
 }
 
 // Inputs the characters of the file to the ch[] and prints the file to stdout
-void printFile()
+void printFreq()
 {
-    //int size = 0;
-    //char ch;
-    //while (!feof(fp))
-    //{
-    //    ch = fgetc(fp);
-    //    chars[ch]++;
-    //    putchar(ch);
-   //     size++;
-   // }
+    printf("\nFile size: %d bytes.\n", size);
+    printf("ASCII\tChar\tFrequency\n");
+    for (int i = 0; i < 256; i++)
+    {
+        if (chars[i] != 0)
+            printf("%d\t%c\t%d\n", i, i, chars[i]);
+    }
 }
 
-//printf("\nFile size: %d bytes.\n",size);
 
-//printf("ASCII\tChar\tFrequency\n");
-/*for (i = 0;i < 256; i++)
-{
-    if (chars[i] != 0)
-        printf("%d\t%c\t%d\n", i, i, chars[i]);
-}
-*/
