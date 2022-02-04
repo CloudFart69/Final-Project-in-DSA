@@ -47,3 +47,21 @@ void enqueue(queuenode **curr, binarynode bnode)
 
 void dequeue(queuenode **curr){ front = (*curr)->next; }
 
+void printQueue(queuenode **curr)
+{
+    if ((*curr) == NULL)
+        return;
+    else
+    {
+        printf("Weight: %d\n", (*curr)->bnode.f);
+        printf("Character: %c\n", (*curr)->bnode.ch);
+        printf("\tRight: ");
+        printBinaryTree((*curr)->bnode.right);
+        printf("\tLeft: ");
+        printBinaryTree((*curr)->bnode.left);
+        printf("\n");
+    }
+    printQueue(&(*curr)->next);
+}
+
+

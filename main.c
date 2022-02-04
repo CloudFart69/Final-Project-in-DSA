@@ -10,7 +10,7 @@
 int main()
 {
     // Variables //
-    FILE *fp = NULL; // File to read, print, and work huffman code on
+    // FILE *fp = NULL; // File to read, print, and work huffman code on
 
 
 
@@ -27,14 +27,15 @@ int main()
     enqueue(&front, *b2);
     enqueue(&front, *b3);
 
-    for (queuenode *curr = front; curr != NULL; curr = curr->next)
-    {
-        printf("Character: %c | Weight/Frequency: %d\n", curr->bnode.ch, curr->bnode.f);
+    printQueue(&front);
 
-    }
-
-    initialize();
-    inputFile(fp);
-    enterToContinue();
-    printFreq();
+    //initialize();
+    //inputFile(fp);
+    //enterToContinue();
+    //printFreq();
 }
+
+/*for (queuenode *curr = front; curr != NULL; curr = curr->next)
+{
+    printf("Character: %c | Weight/Frequency: %d\n", curr->bnode->ch, curr->bnode->f);
+}*/

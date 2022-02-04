@@ -29,3 +29,13 @@ binarynode *createTreeNode(int f, char ch)
     return newNode;
 }
 
+void printBinaryTree(binarynode *bnode)
+{
+    if (bnode == NULL){ return; }
+    else
+    {
+        printf("Weight: %d\nCharacter: %c\n", bnode->f, bnode->ch);
+        //printf("Weight: %d\nCharacter: %c\n", bnode->f, bnode->ch);
+    }
+}
+

@@ -9,5 +9,6 @@ typedef struct queuenode
 
 void enqueue(queuenode **curr, binarynode bnode);
 void dequeue(queuenode **curr);
+void printQueue(queuenode **curr);
 
 #endif // PRIORITYQUEUE_H_INCLUDED

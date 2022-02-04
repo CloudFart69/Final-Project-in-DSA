@@ -10,5 +10,6 @@ typedef struct binarynode
 
 binarynode *createTreeNode(int f, char ch);
 
+void printBinaryTree(binarynode *bnode);
 
 #endif // BINARYTREE_H_INCLUDED
