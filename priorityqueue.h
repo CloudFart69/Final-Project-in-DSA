@@ -3,11 +3,11 @@
 
 typedef struct queuenode
 {
-    int value;
+    binarynode bnode;
     struct queuenode *next;
 }queuenode;
 
-void enqueue(queuenode **curr, int value);
+void enqueue(queuenode **curr, binarynode bnode);
 void dequeue(queuenode **curr);
 
 #endif // PRIORITYQUEUE_H_INCLUDED

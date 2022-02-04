@@ -4,12 +4,12 @@
 extern int x;
 extern int y;
 
-typedef struct binarytree
+typedef struct binarynode
 {
     int f;
     char ch;
-    struct binarytree *left, *right;
-}binarytree;
+    struct binarynode *left, *right;
+}binarynode;
 
 /*void assign(void)
 {
@@ -17,10 +17,10 @@ typedef struct binarytree
     y = 2;
 }*/
 
-binarytree *createTreeNode(int f, char ch)
+binarynode *createTreeNode(int f, char ch)
 {
-    binarytree *newNode;
-    newNode = malloc(sizeof(binarytree));
+    binarynode *newNode;
+    newNode = malloc(sizeof(binarynode));
     newNode->f = f;
     newNode->ch = ch;
     newNode->left = NULL;

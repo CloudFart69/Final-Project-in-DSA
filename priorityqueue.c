@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "binarytree.h"
+
 /// FIRST PART ///
 /// DITO ILALAGAY YUNG TREE, EACH NODE NAG COCONTAIN NG TREE ///
 // Queue kuno pero linked list talaga
 typedef struct queuenode
 {
-    int value; // int muna ngayon pero later magiging treenode na yan
+    binarynode bnode; // int muna ngayon pero later magiging treenode na yan
     struct queuenode *next;
 }queuenode;
 
@@ -17,36 +19,31 @@ queuenode *front = NULL;
 // Remember, when we pass an argument we either pass by value or address.
 // When we pass by address and changed its dereferenced value, we also change it outside of the function.
 // Think of the first pointer as the value and the second pointer as the address.
-void enqueue(queuenode **curr, int value)
+void enqueue(queuenode **curr, binarynode bnode)
 {
     // First node. Meaning the root (front) is empty
     if (*curr == NULL)
     {
         *curr = malloc(sizeof(queuenode));
-        (*curr)->value = value;
+        (*curr)->bnode = bnode;
         (*curr)->next = NULL;
     }
 
     else
     {
         // if the enqeueud value is greater than the current node im comparing to
-        if ((*curr)->value > value)
+        if ((*curr)->bnode.f > bnode.f)
         {
           queuenode *temp = malloc(sizeof(queuenode));
-          temp->value = (*curr)->value;
+          temp->bnode = (*curr)->bnode;
           temp->next = (*curr)->next;
 
-          (*curr)->value = value;
+          (*curr)->bnode = bnode;
           (*curr)->next = temp;
         }
-        else enqueue(&(*curr)->next, value);
+        else enqueue(&(*curr)->next, bnode);
     }
 }
 
 void dequeue(queuenode **curr){ front = (*curr)->next; }
-
-//for (queuenode *curr = front; curr != NULL; curr = curr->next)
-//{
-//    printf("Value: %d\n", curr->value);
-//}
 

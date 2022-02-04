@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1643721402 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
+1643985405 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
 	<stdio.h>
 	<stdlib.h>
 
-1643888552 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
+1643986097 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
 	<stdio.h>
 	<stdlib.h>
+	"binarytree.h"
 
-1643954775 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1643986109 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -20,15 +21,15 @@
 	<stdio.h>
 	<stdbool.h>
 
-1643888266 c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.h
+1643985402 c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.h
 
-1643888544 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
+1643985509 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
 
 1643953956 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1643954975 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1643955007 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>

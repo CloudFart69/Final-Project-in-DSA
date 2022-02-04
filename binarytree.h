@@ -1,14 +1,14 @@
 #ifndef BINARYTREE_H_INCLUDED
 #define BINARYTREE_H_INCLUDED
 
-typedef struct binarytree
+typedef struct binarynode
 {
     int f;
     char ch;
-    struct binarytree *left, *right;
-}binarytree;
+    struct binarynode *left, *right;
+}binarynode;
 
-binarytree *createTreeNode(int f, char ch);
+binarynode *createTreeNode(int f, char ch);
 
 
 #endif // BINARYTREE_H_INCLUDED
