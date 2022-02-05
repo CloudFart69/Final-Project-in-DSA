@@ -10,7 +10,7 @@ char ch;
 
 // Initializing all characters to be null character
 // Reason: remove unnecessary values
-void initialize()
+void initializeChars()
 {
     for (int i = 0; i < 256 ;i++)
         chars[i] = 0;

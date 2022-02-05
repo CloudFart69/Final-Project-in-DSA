@@ -10,11 +10,10 @@
 int main()
 {
     // Variables //
-    // FILE *fp = NULL; // File to read, print, and work huffman code on
-
-
-
+    FILE *fp = NULL; // File to read, print, and work huffman code on
     queuenode *front = NULL;
+
+    /* Sample variables
 
     binarynode *b1 = createTreeNode(0, 'a');
     binarynode *b2 = createTreeNode(3, 'A');
@@ -25,14 +24,15 @@ int main()
 
     enqueue(&front, *b1);
     enqueue(&front, *b2);
-    enqueue(&front, *b3);
+    enqueue(&front, *b3); */
+    // **************** //
 
     printQueue(&front);
 
-    //initialize();
-    //inputFile(fp);
-    //enterToContinue();
-    //printFreq();
+    initializeChars();
+    inputFile(fp);
+    enterToContinue();
+    printFreq();
 }
 
 /*for (queuenode *curr = front; curr != NULL; curr = curr->next)

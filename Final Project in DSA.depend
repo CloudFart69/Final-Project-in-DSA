@@ -8,7 +8,7 @@
 	<stdlib.h>
 	"binarytree.h"
 
-1643993819 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644074798 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -25,11 +25,11 @@
 
 1643993361 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
 
-1643953956 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
+1644074777 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1643955007 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1644074775 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -42,4 +42,11 @@
 1643954873 c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.h
 	<stdbool.h>
 	<stdlib.h>
+
+1644074545 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
+	<stdio.h>
+	<stdlib.h>
+	"binarytree.h"
+	"priorityqueue.h"
+	"countfreq.h"
 

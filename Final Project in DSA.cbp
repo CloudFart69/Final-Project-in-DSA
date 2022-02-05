@@ -39,10 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="countfreq.h" />
-		<Unit filename="errorcheck.c">
+		<Unit filename="huffman.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="errorcheck.h" />
+		<Unit filename="huffman.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -50,6 +50,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="priorityqueue.h" />
+		<Unit filename="utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
