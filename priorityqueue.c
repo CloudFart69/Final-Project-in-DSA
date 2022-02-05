@@ -12,7 +12,6 @@ typedef struct queuenode
     struct queuenode *next;
 }queuenode;
 
-queuenode *front = NULL;
 // no need for rear dahil reversed yung pagkaka sort. basta and ending mukha siyang stack pag nag dedequeue
 
 // We use double pointer because of parameter passing.
@@ -45,7 +44,7 @@ void enqueue(queuenode **curr, binarynode bnode)
     }
 }
 
-void dequeue(queuenode **curr){ front = (*curr)->next; }
+void dequeue(queuenode **curr){ (*curr) = (*curr)->next; }
 
 void printQueue(queuenode **curr)
 {

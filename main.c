@@ -35,7 +35,7 @@ int main()
     enterToContinue();
     printFreq();
     insertCharsToQueue(&front);
-    // buildTree(&front);
+    buildTree(&front);
     printQueue(&front);
 }
 

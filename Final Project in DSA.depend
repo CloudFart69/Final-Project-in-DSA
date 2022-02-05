@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1644079952 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
+1644080194 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
 	<stdio.h>
 	<stdlib.h>
 
-1644079958 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
+1644082637 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
 	<stdio.h>
 	<stdlib.h>
 	"binarytree.h"
 
-1644079564 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644082655 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -30,7 +30,7 @@
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1644080033 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1644080183 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -44,7 +44,7 @@
 	<stdbool.h>
 	<stdlib.h>
 
-1644079195 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
+1644082530 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
 	<stdio.h>
 	<stdlib.h>
 	"binarytree.h"
