@@ -6,6 +6,7 @@
 #include "priorityqueue.h"
 #include "countfreq.h"
 #include "utils.h"
+#include "huffman.h"
 
 int main()
 {
@@ -33,6 +34,9 @@ int main()
     inputFile(fp);
     enterToContinue();
     printFreq();
+    insertCharsToQueue(&front);
+    // buildTree(&front);
+    printQueue(&front);
 }
 
 /*for (queuenode *curr = front; curr != NULL; curr = curr->next)

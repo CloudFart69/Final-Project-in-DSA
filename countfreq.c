@@ -29,9 +29,12 @@ void inputFile(FILE *fp)
     while (!feof(fp))
     {
         ch = fgetc(fp);
-        chars[(int) ch]++;
-        putchar(ch);
-        size++;
+        if ((int) ch != 0)
+        {
+            chars[(int) ch]++;
+            putchar(ch);
+            size++;
+        }
     }
 }
 
