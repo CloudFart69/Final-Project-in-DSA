@@ -28,27 +28,45 @@ binarynode *createTreeNode(int f, char ch)
 
     return newNode;
 }
-/*void printBinaryTree(binarynode *bnode)
+
+void printTabs(int n)
 {
+    for (int i = 0; i < n; i++)
+    {
+        printf("\t");
+    }
+}
 
-}*/
-
-void printBinaryTree(binarynode *bnode)
+void printBinaryTreeRec(binarynode *bnode, int depth)
 {
     if (bnode == NULL)
     {
-        printf("\nempty");
+        printTabs(depth);
+        printf("empty\n");
     }
     else
     {
-        printf("\n\tWeight: %d\n", bnode->f);
-        printf("\tCharacter: %c\n", bnode->ch);
+        printTabs(depth);
+        printf("Weight: %d | ", bnode->f);
+        if (bnode->ch == 0)
+            printf("Character: 0\n");
+        else if (bnode->ch == 32)
+            printf("Character: <space>\n");
+        else
+            printf("Character: %c\n", bnode->ch);
 
-        printf("Right");
-        printBinaryTree(bnode->right);
-        printf("Left");
-        printBinaryTree(bnode->left);
-        printf("done\n");
+        printTabs(depth);
+        printf("Right\n");
+        printBinaryTreeRec(bnode->right, depth + 1);
+
+        printTabs(depth);
+        printf("Left\n");
+        printBinaryTreeRec(bnode->left, depth + 1);
     }
+}
+
+void printBinaryTree(binarynode *bnode)
+{
+    printBinaryTreeRec(bnode, 0);
 }
 
