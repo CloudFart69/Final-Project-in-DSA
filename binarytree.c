@@ -28,14 +28,27 @@ binarynode *createTreeNode(int f, char ch)
 
     return newNode;
 }
+/*void printBinaryTree(binarynode *bnode)
+{
+
+}*/
 
 void printBinaryTree(binarynode *bnode)
 {
-    if (bnode == NULL){ return; }
+    if (bnode == NULL)
+    {
+        printf("\nempty");
+    }
     else
     {
-        printf("Weight: %d\nCharacter: %c\n", bnode->f, bnode->ch);
-        //printf("Weight: %d\nCharacter: %c\n", bnode->f, bnode->ch);
+        printf("\n\tWeight: %d\n", bnode->f);
+        printf("\tCharacter: %c\n", bnode->ch);
+
+        printf("Right");
+        printBinaryTree(bnode->right);
+        printf("Left");
+        printBinaryTree(bnode->left);
+        printf("done\n");
     }
 }
 
