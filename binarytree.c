@@ -1,21 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern int x;
-extern int y;
-
 typedef struct binarynode
 {
     int f;
     char ch;
     struct binarynode *left, *right;
 }binarynode;
-
-/*void assign(void)
-{
-    x = 1;
-    y = 2;
-}*/
 
 binarynode *createTreeNode(int f, char ch)
 {
@@ -48,20 +39,18 @@ void printBinaryTreeRec(binarynode *bnode, int depth)
     {
         printTabs(depth);
         printf("Weight: %d | ", bnode->f);
-        if (bnode->ch == 0)
-            printf("Character: 0\n");
-        else if (bnode->ch == 32)
+        if (bnode->ch == 32)
             printf("Character: <space>\n");
         else
             printf("Character: %c\n", bnode->ch);
 
         printTabs(depth);
-        printf("Right\n");
-        printBinaryTreeRec(bnode->right, depth + 1);
-
-        printTabs(depth);
         printf("Left\n");
         printBinaryTreeRec(bnode->left, depth + 1);
+
+        printTabs(depth);
+        printf("Right\n");
+        printBinaryTreeRec(bnode->right, depth + 1);
     }
 }
 

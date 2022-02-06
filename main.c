@@ -31,11 +31,14 @@ int main()
     printQueue(&front);
 
     initializeChars();
+    initializeCode();
     inputFile(fp);
     enterToContinue();
     printFreq();
     insertCharsToQueue(&front);
     buildTree(&front);
+    getTree(&front);
+    printCode();
     printQueue(&front);
 }
 

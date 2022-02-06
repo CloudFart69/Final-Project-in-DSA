@@ -4,18 +4,15 @@
 
 #include "utils.h"
 
-int chars[256];
+int chars[256] = {0};
 int size = 0;
 char ch;
 
-// Initializing all characters to be null character
-// Reason: remove unnecessary values
 void initializeChars()
 {
-    for (int i = 0; i < 256 ;i++)
-        chars[i] = 0;
+    for (int i = 0; i < 256; i++)
+        chars[i]=0;
 }
-
 // Inputs the file to the file pointer
 void inputFile(FILE *fp)
 {
@@ -36,6 +33,7 @@ void inputFile(FILE *fp)
             size++;
         }
     }
+    free(filename);
 }
 
 // Inputs the characters of the file to the ch[] and prints the file to stdout
