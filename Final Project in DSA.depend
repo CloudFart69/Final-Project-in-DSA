@@ -8,14 +8,16 @@
 	<stdlib.h>
 	"binarytree.h"
 
-1644214281 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644254480 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
+	<string.h>
 	"binarytree.h"
 	"priorityqueue.h"
 	"countfreq.h"
 	"utils.h"
+	"ui.h"
 	"huffman.h"
 
 1643885544 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.c
@@ -30,14 +32,15 @@
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1644202550 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1644254995 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"utils.h"
 	"files.h"
+	"ui.h"
 
-1644201849 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
+1644254748 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
 	<stdio.h>
 	<stdbool.h>
 
@@ -45,21 +48,37 @@
 	<stdbool.h>
 	<stdlib.h>
 
-1644201714 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
+1644237495 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"binarytree.h"
 	"priorityqueue.h"
 	"countfreq.h"
+	"files.h"
+	"utils.h"
 
-1644153943 c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.h
+1644233138 c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.h
 
-1644214162 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.c
+1644233550 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.c
 	<stdio.h>
 	<stdlib.h>
 	"utils.h"
 	"countfreq.h"
 
 1644202529 c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.h
+
+1644254652 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.c
+	<stdio.h>
+	<stdint.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<stdbool.h>
+	<string.h>
+	<math.h>
+	"ui.h"
+	"utils.h"
+
+1644255022 c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.h
 

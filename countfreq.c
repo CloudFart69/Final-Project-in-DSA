@@ -4,6 +4,7 @@
 
 #include "utils.h"
 #include "files.h"
+#include "ui.h"
 
 int chars[256] = {0};
 int size = 0;
@@ -19,12 +20,26 @@ void countFile(FILE *fp)
 {
     char ch;
     filename = malloc(sizeof(char) * 20);
-    printf("Input file to compress: ");
-    scanf("%s", filename);
 
-    fp = fopen(filename, "r");
+    do
+    {
+        clearContent();
+        gotoxy(LP + 40, TP + 7);
+        printf("Input file to compress: ");
 
-    if (isFileNull(fp)){ return; }
+        gotoxy(LP + 40, TP + 8);
+        scanf("%s", filename);
+
+        gotoxy(LP + 40, TP + 9);
+        printf("You typed: %s", filename);
+
+        gotoxy(LP, BP + 5);
+        enterToContinue();
+
+        fp = fopen(filename, "r");
+    }while(isFileNull(fp));
+    printFile(fp);
+    rewind(fp);
     while (!feof(fp))
     {
         ch = fgetc(fp);
@@ -35,7 +50,6 @@ void countFile(FILE *fp)
         }
     }
     fclose(fp);
-    printFile(fp);
 }
 
 // Inputs the characters of the file to the ch[] and prints the file to stdout
