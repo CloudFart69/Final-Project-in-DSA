@@ -2,9 +2,10 @@
 #define COUNTFREQ_H_INCLUDED
 
 extern int chars[256];
+extern char *filename;
 
 void initializeChars();
-void inputFile(FILE *fp);
+void countFile(FILE *fp);
 void printFreq();
 
 #endif // COUNTFREQ_H_INCLUDED

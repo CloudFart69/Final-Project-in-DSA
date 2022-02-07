@@ -8,7 +8,7 @@
 	<stdlib.h>
 	"binarytree.h"
 
-1644153958 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644214281 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -26,17 +26,18 @@
 
 1643993361 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
 
-1644074777 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
+1644202250 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1644154943 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1644202550 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"utils.h"
+	"files.h"
 
-1643954872 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
+1644201849 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
 	<stdio.h>
 	<stdbool.h>
 
@@ -44,7 +45,7 @@
 	<stdbool.h>
 	<stdlib.h>
 
-1644155174 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
+1644201714 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -53,4 +54,12 @@
 	"countfreq.h"
 
 1644153943 c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.h
+
+1644214162 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.c
+	<stdio.h>
+	<stdlib.h>
+	"utils.h"
+	"countfreq.h"
+
+1644202529 c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.h
 

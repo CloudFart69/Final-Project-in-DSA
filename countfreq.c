@@ -3,10 +3,11 @@
 #include <stdbool.h>
 
 #include "utils.h"
+#include "files.h"
 
 int chars[256] = {0};
 int size = 0;
-char ch;
+char *filename;
 
 void initializeChars()
 {
@@ -14,13 +15,14 @@ void initializeChars()
         chars[i]=0;
 }
 // Inputs the file to the file pointer
-void inputFile(FILE *fp)
+void countFile(FILE *fp)
 {
-    char *filename = malloc(sizeof(char) * 20);
+    char ch;
+    filename = malloc(sizeof(char) * 20);
     printf("Input file to compress: ");
     scanf("%s", filename);
 
-    fp = fopen(filename,"r");
+    fp = fopen(filename, "r");
 
     if (isFileNull(fp)){ return; }
     while (!feof(fp))
@@ -29,11 +31,11 @@ void inputFile(FILE *fp)
         if ((int) ch != 0)
         {
             chars[(int) ch]++;
-            putchar(ch);
             size++;
         }
     }
-    free(filename);
+    fclose(fp);
+    printFile(fp);
 }
 
 // Inputs the characters of the file to the ch[] and prints the file to stdout

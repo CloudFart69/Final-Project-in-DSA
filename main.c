@@ -11,7 +11,7 @@
 int main()
 {
     // Variables //
-    FILE *fp = NULL; // File to read, print, and work huffman code on
+    FILE *input = NULL, *output = NULL; // File to read, print, and work huffman code on
     queuenode *front = NULL;
 
     /* Sample variables
@@ -32,13 +32,14 @@ int main()
 
     initializeChars();
     initializeCode();
-    inputFile(fp);
+    countFile(input);
     enterToContinue();
     printFreq();
     insertCharsToQueue(&front);
     buildTree(&front);
     getTree(&front);
     printCode();
+    encode();
     printQueue(&front);
 }
 
