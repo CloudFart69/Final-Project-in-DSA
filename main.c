@@ -42,32 +42,50 @@ int main()
     // printQueue(&front);
     //encode(input, output);
     //decode(&front, output);
-    switch(menu())
+    while(true)
     {
-        case 1:
+        switch(menu())
         {
-                clearLine(30, RP, TP + 2);
-                gotoxy(centerText(31, RP, strlen("COMPRESSION MODE")), TP + 2);
-                printf("COMPRESSION MODE");
-                countFile(input);
-                break;
+            case 1:
+            {
+                    clearLine(30, RP, TP + 2);
+                    gotoxy(centerText(31, RP, strlen("COMPRESSION MODE")), TP + 2);
+                    printf("COMPRESSION MODE");
+                    countFile(input);
+                    enterToContinue();
+                    printFreq();
+                    insertCharsToQueue(&front);
+                    buildTree(&front);
+                    getTree(&front);
+                    enterToContinue();
+                    printCode();
+                    enterToContinue();
+                    clearContent();
+                    printQueue(&front);
+                    enterToContinue();
+                    clearExtraBorders();
+                    clearContent();
+                    encode(input, output);
+                    enterToContinue();
+                    break;
+            }
+            case 2:
+            {
+                    clearLine(30, RP, TP + 2);
+                    gotoxy(centerText(31, RP, strlen("DECOMPRESSION MODE")), TP + 2);
+                    printf("DECOMPRESSION MODE");
+
+                    startContent();
+                    decode(&front, output);
+                    enterToContinue();
+
+                    gotoxy(LP, BP+5); break;
+            }
+
+            case 3: gotoxy(LP+40, TP+2); gotoxy(LP, BP+5);exit(0); break;
+
+            default: printf("Please restart the program");
         }
-        case 2:
-        {
-                clearLine(30, RP, TP + 2);
-                gotoxy(centerText(31, RP, strlen("DECOMPRESSION MODE")), TP + 2);
-                printf("DECOMPRESSION MODE");
-
-                gotoxy(LP+40, TP+7); printf("Please enter Filename: ");
-                gotoxy(LP+40, TP+8); scanf("%s", filename);
-                gotoxy(LP+40, TP+9); printf("%s", filename);
-
-                gotoxy(LP, BP+5); break;
-        }
-
-        case 3: gotoxy(LP+40, TP+2); gotoxy(LP, BP+5);exit(0); break;
-
-        default: printf("Please restart the program");
     }
     endProgram();
     return 0;

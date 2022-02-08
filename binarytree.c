@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "ui.h"
+
+int y = TP + 6;
+
 typedef struct binarynode
 {
     int f;
@@ -20,42 +24,48 @@ binarynode *createTreeNode(int f, char ch)
     return newNode;
 }
 
-void printTabs(int n)
+void printBinaryTreeRec(binarynode *bnode, int x, int a)
 {
-    for (int i = 0; i < n; i++)
+    if (y > BP - 1)
     {
-        printf("\t");
+        removeBottomBorder();
+        gotoxy(LP + 32, y);
+        BP = y + 1;
     }
-}
 
-void printBinaryTreeRec(binarynode *bnode, int depth)
-{
     if (bnode == NULL)
     {
-        printTabs(depth);
-        printf("empty\n");
+        gotoxy(x + 4, y);
+        printf("empty");
     }
     else
     {
-        printTabs(depth);
-        printf("Weight: %d | ", bnode->f);
+        y += 2;
+        gotoxy(x, y);
+        printf("Weight: %d", bnode->f);
+
+        y += 2;
+        gotoxy(x, y);
         if (bnode->ch == 32)
-            printf("Character: <space>\n");
+            printf("Character: <space>");
         else
-            printf("Character: %c\n", bnode->ch);
+            printf("Character: %c", bnode->ch);
 
-        printTabs(depth);
-        printf("Left\n");
-        printBinaryTreeRec(bnode->left, depth + 1);
+        y += 2;
+        gotoxy(x, y);
+        printf("Left");
+        printBinaryTreeRec(bnode->left, x + 4, 1);
 
-        printTabs(depth);
-        printf("Right\n");
-        printBinaryTreeRec(bnode->right, depth + 1);
+        y += 2;
+        gotoxy(x, y);
+        printf("Right");
+        printBinaryTreeRec(bnode->right, x + 4, 1);
     }
+    placeBottomBorder();
 }
 
 void printBinaryTree(binarynode *bnode)
 {
-    printBinaryTreeRec(bnode, 0);
+    printBinaryTreeRec(bnode, LP + 30, 0);
 }
 

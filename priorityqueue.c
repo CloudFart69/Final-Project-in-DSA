@@ -52,17 +52,6 @@ void printQueue(queuenode **curr)
         return;
     else
     {
-        /*printf("\nWeight: %d\n", (*curr)->bnode.f);
-        printf("Character: %c\n", (*curr)->bnode.ch);
-
-        printf("\n\tRight: ");
-        printBinaryTree((*curr)->bnode.right);
-
-        printf("\n\tLeft: ");
-        printBinaryTree((*curr)->bnode.left);
-        printf("\n");*/
-
-
         printBinaryTree(&(*curr)->bnode);
     }
     printQueue(&(*curr)->next);

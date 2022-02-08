@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1644143700 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
+1644319606 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.c
 	<stdio.h>
 	<stdlib.h>
+	"ui.h"
 
-1644118219 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
+1644316304 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.c
 	<stdio.h>
 	<stdlib.h>
 	"binarytree.h"
 
-1644311241 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644328566 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -32,7 +33,7 @@
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1644294670 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1644327662 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -40,15 +41,17 @@
 	"files.h"
 	"ui.h"
 
-1644254748 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
+1644316275 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.c
 	<stdio.h>
 	<stdbool.h>
+	<string.h>
+	"ui.h"
 
 1643954873 c:\users\joshuel ernest\desktop\dsa\final project in dsa\utils.h
 	<stdbool.h>
 	<stdlib.h>
 
-1644237495 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
+1644328012 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -57,6 +60,7 @@
 	"countfreq.h"
 	"files.h"
 	"utils.h"
+	"ui.h"
 
 1644233138 c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.h
 
@@ -69,7 +73,7 @@
 
 1644202529 c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.h
 
-1644311540 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.c
+1644326059 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.c
 	<stdio.h>
 	<stdint.h>
 	<stdlib.h>
@@ -81,5 +85,5 @@
 	"ui.h"
 	"utils.h"
 
-1644311787 c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.h
+1644325969 c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.h
 
