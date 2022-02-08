@@ -69,6 +69,7 @@ int main()
 
         default: printf("Please restart the program");
     }
+    endProgram();
     return 0;
 }
 

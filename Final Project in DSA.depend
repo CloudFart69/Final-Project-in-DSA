@@ -8,7 +8,7 @@
 	<stdlib.h>
 	"binarytree.h"
 
-1644254480 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644311241 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -32,7 +32,7 @@
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
-1644254995 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
+1644294670 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -60,15 +60,16 @@
 
 1644233138 c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.h
 
-1644233550 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.c
+1644311760 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.c
 	<stdio.h>
 	<stdlib.h>
 	"utils.h"
 	"countfreq.h"
+	"ui.h"
 
 1644202529 c:\users\joshuel ernest\desktop\dsa\final project in dsa\files.h
 
-1644254652 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.c
+1644311540 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.c
 	<stdio.h>
 	<stdint.h>
 	<stdlib.h>
@@ -80,5 +81,5 @@
 	"ui.h"
 	"utils.h"
 
-1644255022 c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.h
+1644311787 c:\users\joshuel ernest\desktop\dsa\final project in dsa\ui.h
 

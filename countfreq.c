@@ -35,9 +35,10 @@ void countFile(FILE *fp)
 
         gotoxy(LP, BP + 5);
         enterToContinue();
-
+        clearContent();
         fp = fopen(filename, "r");
     }while(isFileNull(fp));
+    startContent();
     printFile(fp);
     rewind(fp);
     while (!feof(fp))
@@ -55,12 +56,20 @@ void countFile(FILE *fp)
 // Inputs the characters of the file to the ch[] and prints the file to stdout
 void printFreq()
 {
-    printf("\nFile size: %d bytes.\n", size);
+    int y = 0;
+    clearContent();
+    gotoxy(LP + 40, TP + 7);
+    printf("File size: %d bytes. ", size);
+    gotoxy(LP + 40, TP + 8);
     printf("ASCII\tChar\tFrequency\n");
     for (int i = 0; i < 256; i++)
     {
         if (chars[i] != 0)
+        {
+            y++;
+            gotoxy(LP + 40, TP + 9 + y);
             printf("%d\t%c\t%d\n", i, i, chars[i]);
+        }
     }
 }
 

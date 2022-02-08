@@ -57,6 +57,7 @@
 		<Unit filename="ui.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="ui.h" />
 		<Unit filename="utils.c">
 			<Option compilerVar="CC" />
 		</Unit>
