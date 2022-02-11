@@ -160,6 +160,8 @@ void encode(FILE *fp, FILE *encoded)
             }
         }
     }
+    gotoxy(centerText(LP + 25, RP, strlen("Encoded saved: huffman_encoded.txt")), TP + 5);
+    printf("Encoded saved: huffman_encoded.txt");
     placeBottomBorder();
     fclose(fp);
     fclose(encoded);
@@ -220,15 +222,9 @@ void decode(queuenode **curr, FILE *encoded)
     {
         encoded = fopen("huffman_encoded.txt", "r");
         decode(curr, encoded);
-        if(isFileNull(encoded))
-        {
-            gotoxy(centerText(LP + 25, RP, strlen("Error. Try Compression option first.")), BP - 1);
-            printf("Error. Try Compression option first.");
-        }
     }
     else
     {
         decodeRec(curr, &(*curr)->bnode, encoded);
     }
 }
-

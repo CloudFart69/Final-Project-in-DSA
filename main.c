@@ -1,3 +1,12 @@
+///***********Members**************///
+
+///********Elmer Absalon***********///
+///***Simon Daniel Dela Cruz*******///
+///*******Andrei Espinosa**********///
+///*****Joshuel Ernest Simbulan****///
+///****Andrew James Tejerero*******///
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -9,41 +18,18 @@
 #include "utils.h"
 #include "ui.h"
 #include "huffman.h"
+#include "files.h"
 
 int main()
 {
-    // Variables //
     FILE *input = NULL, *output = NULL; // File to read, print, and work huffman code on
     queuenode *front = NULL;
-    /* Sample variables
-
-    binarynode *b1 = createTreeNode(0, 'a');
-    binarynode *b2 = createTreeNode(3, 'A');
-    binarynode *b3 = createTreeNode(100, ';');
-
-    b1->left = b2;
-    b1->right = b3;
-
-    enqueue(&front, *b1);
-    enqueue(&front, *b2);
-    enqueue(&front, *b3); */
-    // **************** //
-
-    //printQueue(&front);
-
-    initializeChars();
-    initializeCode();
-    //enterToContinue();
-    //printFreq();
-    //insertCharsToQueue(&front);
-    //buildTree(&front);
-    //getTree(&front);
-    //printCode();
-    // printQueue(&front);
-    //encode(input, output);
-    //decode(&front, output);
     while(true)
     {
+        initializeChars();
+        initializeCode();
+        size = 0, y = TP + 6;
+
         switch(menu())
         {
             case 1:
@@ -76,6 +62,23 @@ int main()
                     printf("DECOMPRESSION MODE");
 
                     startContent();
+                    if (front == NULL)
+                    {
+                        gotoxy(centerText(LP + 25, RP, strlen("Error. Try Compression option first.")), BP - 1);
+                        printf("Error. Try Compression option first.");
+                        enterToContinue();
+                        break;
+                    }
+                    output = fopen("huffman_encoded.txt", "r");
+                    if (output != NULL)
+                    {
+                        printFile(output);
+                        enterToContinue();
+                        clearContent();
+                        startContent();
+                    }
+                    fclose(output);
+                    output = NULL;
                     decode(&front, output);
                     enterToContinue();
 
@@ -90,8 +93,3 @@ int main()
     endProgram();
     return 0;
 }
-
-/*for (queuenode *curr = front; curr != NULL; curr = curr->next)
-{
-    printf("Character: %c | Weight/Frequency: %d\n", curr->bnode->ch, curr->bnode->f);
-}*/

@@ -2,6 +2,7 @@
 #define COUNTFREQ_H_INCLUDED
 
 extern int chars[256];
+extern int size;
 extern char *filename;
 
 void initializeChars();

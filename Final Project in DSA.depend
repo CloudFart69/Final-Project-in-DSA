@@ -9,7 +9,7 @@
 	<stdlib.h>
 	"binarytree.h"
 
-1644328566 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
+1644559160 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -20,16 +20,17 @@
 	"utils.h"
 	"ui.h"
 	"huffman.h"
+	"files.h"
 
 1643885544 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.c
 	<stdio.h>
 	<stdbool.h>
 
-1643994262 c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.h
+1644404023 c:\users\joshuel ernest\desktop\dsa\final project in dsa\binarytree.h
 
 1643993361 c:\users\joshuel ernest\desktop\dsa\final project in dsa\priorityqueue.h
 
-1644202250 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
+1644403867 c:\users\joshuel ernest\desktop\dsa\final project in dsa\countfreq.h
 
 1643888458 c:\users\joshuel ernest\desktop\dsa\final project in dsa\errorcheck.h
 
@@ -51,7 +52,7 @@
 	<stdbool.h>
 	<stdlib.h>
 
-1644328012 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
+1644558793 source:c:\users\joshuel ernest\desktop\dsa\final project in dsa\huffman.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
